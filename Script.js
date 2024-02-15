@@ -56,3 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Append the paragraph to the 'loadingText' element
     loadingTextElement.appendChild(paragraphElement);
 });
+
+function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
